@@ -1,0 +1,18 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+
+	"settings": {
+		"TEXroot": "master.tex",
+		"builder": "basic",
+		"open_pdf_on_build": true,
+		"keep_focus": false,
+		"copy_output_on_build": false,
+		"output_directory": "output",
+		"aux_directory": "output",
+	}
+}
