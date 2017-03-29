@@ -1,0 +1,130 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+
+\documentclass[11pt, a4paper]{awesome-cv}
+\usepackage{fontawesome}
+
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{profile}
+\name{David}{Sparer}
+\position{Operations Engineer{\enskip\cdotp\enskip}Automation Expert}
+\address{1235 Place Ave. Denver, CO 80227}
+\mobile{123-456-7890}
+\email{address@gmail.com}
+\github{sparerd}
+\linkedin{david-sparer}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Spok Recruitment Team}
+  {Spok Inc.\\10400 Yellow Circle Drive\\Eden Prairie, MN 55343}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Development Operations Engineer}
+% How the letter is opened
+\letteropening{Dear Hiring Manager,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+\letterenclosure[Relocation]{I am currently in the process of relocating to the Minneapolis, MN area.}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+	% Print the header with above personal informations
+	% Give optional argument to change alignment(C: center, L: left, R: right)
+	\makecvheader[R]
+
+	% Print the footer with 3 arguments(<left>, <center>, <right>)
+	% Leave any of these blank if they are not needed
+	\makecvfooter
+	  {\today}
+	  {David Sparer~~~·~~~Cover Letter}
+	  {}
+
+	% Print the title with above letter informations
+	\makelettertitle
+
+	%-------------------------------------------------------------------------------
+	%	LETTER CONTENT
+	%-------------------------------------------------------------------------------
+	\begin{cvletter}
+
+		\lettersection{Hi!}
+		They say that if you love what you do, you'll never work a day in your life. I feel like that's the case with me, because I've been able to fit my passion for automation in nearly every job I've been in. You can imagine my unbridled glee when I saw that the Development Operations Engineer position at Spok read like my bucket list. Between this cover letter and my resume, I hope to show you why we are a great fit for one another.
+
+		\lettersection{About Me}
+		I have a B.A. in Computer Science (Management Info Systems concentration) and over 8 years in the field of computing, with each position requiring greater technical aptitude and responsibility. I have worked mostly in operations in my post-bachelor's career with a strong focus on automation. I enjoy learning about software design, system architecture, testing methodologies, and release strategies.
+
+		\lettersection{Why Spok?}
+		Every job is a two way street, and I feel that the culture at Spok is a great fit for me. I am impressed with Spok's culture of collaboration and learning. Almost every comment I've seen from current and former employees mentions how willing everyone is to share knowledge and lend a hand.
+
+		\lettersection{Why Me?}
+		In the last year, I've worked heavily with building CI and release pipelines in Jenkins for the mRemoteNG project. As a technical analyst in Pearson's Operations Command Center, I'm accustomed to supporting a massive environment of diverse systems and applications.
+
+	\end{cvletter}
+
+
+	%-------------------------------------------------------------------------------
+	% Print the signature and enclosures with above letter informations
+	\makeletterclosing
+
+\end{document}

@@ -1,0 +1,51 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[12pt,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{classic} % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black} % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{enumitem}
+\usepackage[scale=0.75]{geometry} % adjust the page margins
+
+% personal data
+\name{David}{Sparer}
+\address{street and number}{postcode city}
+\phone[mobile]{(123)~456~7890}
+\email{john@doe.org}
+\photo[64pt][0.4pt]{picture} % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+
+\begin{document}
+	% recipient data
+	\recipient{Spok Recruitment Team}{Spok, Inc.\\10400 Yellow Circle Drive\\Eden Prairie, MN 55343}
+	\date{March 29, 2017}
+	\opening{Dear Hiring Manager,}
+	\closing{Sincerely,}
+	\makelettertitle
+
+
+	\qquad I am excited to apply for the Development Operations Engineer position in your Eden Prairie, MN office. I have a B.A. in Computer Science (Management Info Systems concentration) and over 8 years in the field of computing, with each position requiring greater technical aptitude and responsibility. My key strengths that make me a good fit for this position include:
+	\begin{itemize}[leftmargin=.5in]
+		\item Experienced in supporting applications in a massive SaaS environment
+		\item Several successful automation initiatives
+		\item Strong understanding of software engineering
+		\item Self-motivated and eager to learning new things
+	\end{itemize}
+
+	\qquad In my current work with Pearson, I have focused on automating common workflows and creating the requisite tooling to enable further automation in PowerShell. In many cases, this has required adapting an existing API (REST/SOAP/local exe) into something more easily consumed by the rest of the library. This has allowed us to aggregate data from a large array of different monitoring tools, automate account creations, and simplify application recovery.
+	
+	\qquad In early 2016 I wanted to become more engaged in the open source community. I took over as the project manager and lead developer for the open source program mRemoteNG (https://github.com/mRemoteNG/mRemoteNG). One of the first things I did was setup a build and test pipeline using Jenkins hosted on AWS. This has allowed us to automate a large portion of our release workflow. Currently, I lead development efforts along with one other contributor.
+
+	Thank you for taking the time to consider my application. I look forward to speaking with you soon about how I can contribute to the success of Spok and its customers.
+
+
+	\makeletterclosing
+
+\end{document}
