@@ -7,7 +7,6 @@
 	],
 
 	"settings": {
-		"TEXroot": "master.tex",
 		"builder": "basic",
 		"open_pdf_on_build": true,
 		"keep_focus": false,
