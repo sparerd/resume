@@ -1,0 +1,123 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{cls/awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\usepackage{multicol}
+\usepackage[none]{hyphenat}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\photo[circle,noedge,left]{cover_letters/awesome_cv/profile}
+\name{David}{Sparer}
+\position{Operations Engineer{\enskip\cdotp\enskip}Automation Expert}
+\address{1235 Place Ave. Denver, CO 80227}
+\mobile{123-456-7890}
+\email{myemail@service.com}
+\github{sparerd}
+\linkedin{david-sparer}
+% \extrainfo{extra informations}
+
+\quote{Operations. Development. Automation.}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+	% Print the header with above personal informations
+	% Give optional argument to change alignment(C: center, L: left, R: right)
+	\makecvheader[C]
+
+	% Print the footer with 3 arguments(<left>, <center>, <right>)
+	% Leave any of these blank if they are not needed
+	\makecvfooter
+	  {\today}
+	  {David Sparer~~~·~~~Résumé}
+	  {\thepage}
+
+
+	\cvsection{Education}
+		\begin{cventries}
+			\input{sections/education_awesome-cv}
+		\end{cventries}
+
+	\cvsection{Certifications}
+		\begin{cventries}
+			\input{sections/certifications_awesome-cv}
+		\end{cventries}
+
+	\cvsection{Work Experience}
+		\begin{cventries}
+			\input{employment_history/pearson/sr_analyst/devops_awesome-cv}
+			\input{employment_history/pearson/analyst/devops_awesome-cv}
+			\input{employment_history/concordia/pcsupport/devops_awesome-cv}
+			\input{employment_history/concordia/student_manager/std_awesome-cv}
+			\input{employment_history/concordia/student_tech/std_awesome-cv}
+			\input{employment_history/medtronic/intern_webdev/std_awesome-cv}
+		\end{cventries}
+
+	\cvsection{Related Experience}
+		\begin{cventries}
+			\input{employment_history/mremoteng/proj_owner/devops_awesome-cv}
+		\end{cventries}
+
+	\cvsection{Technical Skills}
+		\begin{cventries}
+			\begin{flushleft} {\bf Build Management} \end{flushleft}
+			\input{technical_skills/build_management}
+
+			\begin{flushleft} {\bf System Support} \end{flushleft}
+			\input{technical_skills/system_support_raw}
+
+			\begin{flushleft} {\bf Programming} \end{flushleft}
+			\input{technical_skills/programming_raw}
+		\end{cventries}
+
+\end{document}
